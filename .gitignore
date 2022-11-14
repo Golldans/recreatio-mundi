@@ -1,0 +1,4 @@
+node_modules
+entities/*
+implementation/*
+schema.prisma
