@@ -146,7 +146,6 @@ if (i == 0)
 reader.prompt();
 
 reader.on('line', (input) => {
-    console.log(i);
     const table = tables[i];
     i += 1;
     
@@ -218,8 +217,6 @@ reader.on('line', (input) => {
     import { ${table_name} } from '../entities/${input}.entity';`;
 
     const class_name = input.charAt(0).toUpperCase() + input.slice(1);
-
-    console.log(class_name);
 
     const implementation_class =
     `
